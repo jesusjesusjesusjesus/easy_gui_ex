@@ -15,8 +15,8 @@ while roll_completed == 0:
     player_two_rolls[0] = random.choice(possible_rolls)
     player_two_rolls[1] = random.choice(possible_rolls)
     player_two_rolls_add = player_two_rolls[0] + player_two_rolls[1]
-    easygui.msgbox("player one rolled", player_one_rolls[0], "and", player_one_rolls[1], "total", player_one_rolls_add)
-    easygui.msgbox("player two rolled", player_two_rolls[0], "and", player_two_rolls[1], "total", player_two_rolls_add)
+    easygui.msgbox(f"player one rolled {player_one_rolls[0]} and {player_one_rolls[1]}\ntotal  {player_one_rolls_add}")
+    easygui.msgbox(f"player two rolled {player_two_rolls[0]} and {player_two_rolls[1]}\ntotal  {player_two_rolls_add}")
     roll_completed = 1
 
 
